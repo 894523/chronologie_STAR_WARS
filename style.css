@@ -110,6 +110,3 @@ link[rel="icon"] {
     border-radius: 50%; /* rendre l'icône ronde */
     object-fit: cover; /* ajuster l'image pour qu'elle s'adapte sans déformation */
 }
-h2 {
-    padding-right: calc(100% - 1px); /* Réduit la largeur de 1px */
-  }
