@@ -4,22 +4,25 @@ body {
     color: #ffffff;
     line-height: 1.6;
     max-width: 1000px;
-    margin: auto;
-    padding: 2rem;
+    margin: 0 auto;
+    padding: 0 1rem; /* supprimé les rem pour faciliter le responsive */
+    box-sizing: border-box;
 }
 
 h2 {
-    color: #ffe81f; /* jaune Star Wars */
+    color: #ffe81f;
     font-size: 1.8rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #444;
     padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 h2 img {
-    vertical-align: middle;
     height: 32px;
-    margin-right: 10px;
+    width: auto;
 }
 
 nav {
@@ -40,7 +43,6 @@ nav ul {
     padding: 0;
     margin: 0;
     justify-content: center;
-    
 }
 
 nav a {
@@ -48,7 +50,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
-    }
+}
 
 nav a:hover {
     color: #ffffff;
@@ -60,6 +62,8 @@ section {
     background-color: #111111;
     border-left: 4px solid #ffe81f;
     border-radius: 6px;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 ul {
@@ -78,11 +82,14 @@ ul {
 }
 
 .logo img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     max-height: 180px;
+    display: block;
+    margin: 0 auto;
 }
 
+/* Assure que les liens sont toujours visibles */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -102,11 +109,12 @@ a:hover {
     h2 {
         font-size: 1.4rem;
     }
-}
-/* Force une taille et une forme ronde pour l'icône dans la barre de titre */
-link[rel="icon"] {
-    width: 32px; /* taille de l'icône */
-    height: 32px; /* taille de l'icône */
-    border-radius: 50%; /* rendre l'icône ronde */
-    object-fit: cover; /* ajuster l'image pour qu'elle s'adapte sans déformation */
+
+    section {
+        padding: 1rem 0.5rem;
+    }
+
+    body {
+        padding: 0 0.5rem;
+    }
 }
