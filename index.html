@@ -19,7 +19,14 @@
   </div>
 
   <!-- Section dynamique des comics -->
-  <div id="comics-timeline" style="display: none; padding: 0 20px;"></div>
+  <div id="comics-timeline" style="display: none; padding: 0 20px;">
+    <!-- Contenu de test pour les comics -->
+    <ul>
+      <li><em>Comic 1: Star Wars Adventures</em></li>
+      <li><em>Comic 2: Tales of the Jedi</em></li>
+      <li><em>Comic 3: The Clone Wars Comics</em></li>
+    </ul>
+  </div>
 
   <!-- Chronologie -->
   <section id="dawn-of-the-jedi">
@@ -74,7 +81,6 @@
         </ul>
     
         <!-- Position des comics ici -->
-    
         <div id="comics-anchor"></div>
     
         <ul>
@@ -110,15 +116,18 @@
             <li><em>Coming soon</em></li>
         </ul>
     </section>
+
     <script>
         function toggleComics() {
             const timeline = document.getElementById('comics-timeline');
             const button = document.querySelector('.toggle-button');
             const visible = timeline.style.display === 'block';
+
+            // Toggle visibility of the comics section
             timeline.style.display = visible ? 'none' : 'block';
             button.textContent = visible ? 'Afficher les comics' : 'Masquer les comics';
         }
-        </script>
-        
+    </script>
+
 </body>
 </html>
