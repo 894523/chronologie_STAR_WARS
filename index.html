@@ -79,21 +79,28 @@
     <section id="rebellion">
         <h2><img src="images/age-of-the-rebellion.png" alt="Age of Rebellion Logo">Age of Rebellion</h2>
         <ul>
-          <li><a href="https://www.starwars.com/series/tales-of-the-empire" target="_blank"><em>Tales of the Empire</em></a> – Season 2 (~0 BBY)</li>
-          <li><a href="https://www.starwars.com/films/rogue-one" target="_blank"><em>Rogue One: A Star Wars Story</em></a> (0 BBY)</li>
-          <li><a href="https://www.starwars.com/films/star-wars-episode-iv-a-new-hope" target="_blank"><em>Episode IV: A New Hope</em></a> (0 BBY)</li>
+            <li><a href="https://www.starwars.com/series/tales-of-the-empire" target="_blank"><em>Tales of the Empire</em></a> – Season 2 (~0 BBY)</li>
+            <li><a href="https://www.starwars.com/films/rogue-one" target="_blank"><em>Rogue One: A Star Wars Story</em></a> (0 BBY)</li>
+            <li><a href="https://www.starwars.com/films/star-wars-episode-iv-a-new-hope" target="_blank"><em>Episode IV: A New Hope</em></a> (0 BBY)</li>
         </ul>
     
-        <!-- Position des comics ici -->
-        <div id="comics-anchor"></div>
+        <!-- Section dynamique des comics entre IV et V -->
+        <div id="comics-timeline" style="display: none; padding: 0 20px;">
+            <h3>Comics entre les épisodes IV et V</h3>
+            <ul id="comics-list"></ul>
+        </div>
     
+        <button onclick="toggleComics()" class="toggle-button">Afficher les comics</button>
+    
+        <script src="js/loadComics.js"></script>  <!-- Inclus ici pour que les comics se chargent bien après la page -->
+        
         <ul>
-          <li><a href="https://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back" target="_blank"><em>Episode V: The Empire Strikes Back</em></a> (3 ABY)</li>
-          <li><a href="https://www.starwars.com/films/star-wars-episode-vi-return-of-the-jedi" target="_blank"><em>Episode VI: Return of the Jedi</em></a> (4 ABY)</li>
+            <li><a href="https://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back" target="_blank"><em>Episode V: The Empire Strikes Back</em></a> (3 ABY)</li>
+            <li><a href="https://www.starwars.com/films/star-wars-episode-vi-return-of-the-jedi" target="_blank"><em>Episode VI: Return of the Jedi</em></a> (4 ABY)</li>
         </ul>
-      </section>
+    </section>
     
-      <section id="nouvelle-republique">
+    <section id="nouvelle-republique">
         <h2><img src="images/the-new-republic.png" alt="The New Republic Logo">The New Republic</h2>
         <ul>
             <li><a href="https://www.starwars.com/series/the-mandalorian" target="_blank"><em>The Mandalorian</em></a> – Seasons 1 to 3 (9–11 ABY)</li>
@@ -101,7 +108,7 @@
             <li><a href="https://www.starwars.com/series/ahsoka" target="_blank"><em>Ahsoka</em></a> (11 ABY)</li>
             <li><a href="https://www.starwars.com/series/skeleton-crew" target="_blank"><em>Skeleton Crew</em></a> (~11 ABY)</li>
         </ul>
-    </section>
+    </section>    
 
     <section id="premier-ordre">
         <h2><img src="images/rise-of-the-first-order.png" alt="Rise of the First Order Logo">Rise of the First Order</h2>

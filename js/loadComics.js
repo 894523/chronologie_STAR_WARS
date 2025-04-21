@@ -1,3 +1,4 @@
+// Fonction pour afficher/masquer les comics
 function toggleComics() {
     const timeline = document.getElementById('comics-timeline');
     const button = document.querySelector('.toggle-button');
@@ -6,22 +7,22 @@ function toggleComics() {
     button.textContent = visible ? 'Afficher les comics' : 'Masquer les comics';
 }
 
+// Fonction pour charger les comics depuis le fichier JSON
 fetch('data/comics.json')
     .then(res => res.json())
     .then(data => {
-        const timeline = document.getElementById('comics-timeline');
+        const comicsList = document.getElementById('comics-list');
+        // Vérifie que nous avons des comics dans la section IV-V
+        const comicsIVV = data.comics.filter(comic => comic.episode === 'IV-V');
 
-        data.forEach(section => {
-            const title = document.createElement('h3');
-            title.textContent = section.periode;
-            timeline.appendChild(title);
-
-            const ul = document.createElement('ul');
-            section.entries.forEach(entry => {
-                const li = document.createElement('li');
-                li.innerHTML = `<em>${entry}</em>`;
-                ul.appendChild(li);
-            });
-            timeline.appendChild(ul);
+        // Ajoute chaque comic à la liste
+        comicsIVV.forEach(comic => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = comic.url;
+            link.textContent = comic.title;
+            listItem.appendChild(link);
+            comicsList.appendChild(listItem);
         });
-    });
+    })
+    .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
