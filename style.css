@@ -123,3 +123,25 @@ section li {
         padding: 0 0.5rem;
     }
 }
+.toggle-button {
+    margin: 10px 0;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #ffe81f;
+    border: 1px solid #ffe81f;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #ffe81f;
+    color: #000;
+}
+#comics-timeline {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
