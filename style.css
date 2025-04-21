@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #ffe81f;
+    padding: 20px;
+}
+.logo img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.toggle-button {
+    background-color: #222;
+    color: #ffe81f;
+    padding: 10px;
+    border: 2px solid #ffe81f;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+h2 img {
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.top-bar {
+    text-align: center;
+}

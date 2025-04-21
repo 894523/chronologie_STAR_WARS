@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Timeline – From Dawn of the Jedi to New Jedi Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/symbol.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="top-bar">
+        <button onclick="toggleComics()" class="toggle-button">Afficher les comics</button>
+    </div>
+
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg" alt="Star Wars Logo">
+    </div>
+
+    <!-- Contenu simplifié pour l'exemple -->
+    <section id="rebellion">
+        <h2><img src="images/age-of-the-rebellion.png" alt="Age of Rebellion Logo">Age of Rebellion</h2>
+        <ul>
+            <li><a href="https://www.starwars.com/films/star-wars-episode-iv-a-new-hope" target="_blank"><em>Episode IV: A New Hope</em></a> (0 BBY)</li>
+            <div id="comics-anchor"></div>
+            <li><a href="https://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back" target="_blank"><em>Episode V: The Empire Strikes Back</em></a> (3 ABY)</li>
+        </ul>
+    </section>
+
+    <div id="comics-timeline" style="display: none;"></div>
+
+    <script src="js/loadComics.js"></script>
+</body>
+</html>
