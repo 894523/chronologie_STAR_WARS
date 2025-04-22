@@ -1,21 +1,33 @@
 /* Global body styles */
 body {
     font-family: 'Star Wars', 'Segoe UI', Tahoma, Geneva, sans-serif;
-    background-color: #0a0a0a; /* Fond sombre uniforme */
+    background-color: #0a0a0a;
     color: #f1f1f1;
     padding: 20px;
     margin: 0;
 }
 
-/* Logo styling */
+/* Enlève la déco par défaut des liens partout */
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffe81f;
+    text-decoration: underline;
+}
+
+/* Logo */
 .logo img {
     max-width: 320px;
     display: block;
     margin: 0 auto;
-    background-color: #0a0a0a; /* Même fond que la page pour effacer le rectangle */
+    background-color: #000000; /* Même fond que le body */
 }
 
-/* Section headers and images */
+/* Titres */
 h2 img {
     height: 28px;
     vertical-align: middle;
@@ -29,11 +41,11 @@ h2 {
     color: #ffe81f;
 }
 
-/* Section styling */
+/* Sections */
 section {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #1a1a1a; /* Légère différence pour les sections */
+    background-color: #000000;
     border-radius: 8px;
 }
 
@@ -42,23 +54,19 @@ section h2 {
     color: #ffe81f;
 }
 
-/* Links within sections */
-section ul li a {
-    color: #f1f1f1;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+/* Listes de liens */
+section ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-section ul li a:hover {
-    color: #ffe81f;
-    text-decoration: underline;
+section ul li {
+    margin-bottom: 10px;
 }
 
 /* Comics section */
 #comics-timeline {
-    background-color: #222;
+    background-color: #000000;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -71,26 +79,7 @@ section ul li a:hover {
     margin-bottom: 15px;
 }
 
-#comics-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#comics-list li {
-    margin-bottom: 10px;
-}
-
-#comics-list li a {
-    color: #f1f1f1;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-#comics-list li a:hover {
-    color: #ffe81f;
-}
-
-/* Top bar styling */
+/* Top bar */
 .top-bar {
     text-align: center;
     margin-top: 30px;
@@ -100,8 +89,6 @@ section ul li a:hover {
 
 .top-bar a {
     color: #ffe81f;
-    text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .top-bar a:hover {
@@ -109,7 +96,7 @@ section ul li a:hover {
     text-decoration: underline;
 }
 
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -124,7 +111,7 @@ section ul li a:hover {
     }
 }
 
-/* Episode list cleanup */
+/* Episode list */
 #episode-list {
     margin-top: 0;
     padding: 0;
