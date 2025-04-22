@@ -14,27 +14,7 @@ body {
     margin: 0 auto;
 }
 
-/* Button styling */
-.toggle-button {
-    background-color: #222;
-    color: #ffe81f;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 20px auto;
-    display: block;
-    width: auto;
-    font-family: 'Star Wars', sans-serif;
-}
 
-.toggle-button:hover {
-    background-color: #444;
-    transform: scale(1.05);
-}
 
 /* Section headers and images */
 h2 img {
@@ -147,27 +127,7 @@ section ul li a:hover {
         font-size: 1.5rem;
     }
 
-    .toggle-button {
-        background-color: #222; /* Fond sombre */
-        color: #ffe81f; /* Couleur du texte jaune */
-        padding: 12px 25px;
-        border: none;
-        cursor: pointer;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        margin: 20px auto;
-        display: block;
-        font-family: 'Star Wars', sans-serif;
-        text-align: center; /* Aligne le texte au centre du bouton */
-        width: auto;
-    }
-    
-    .toggle-button:hover {
-        background-color: #444; /* Couleur de fond lors du survol */
-        transform: scale(1.05); /* Agrandit légèrement le bouton lors du survol */
-    }    
+        
 }
 #episode-list {
     margin-top: 0;
