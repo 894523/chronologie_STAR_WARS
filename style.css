@@ -1,91 +1,164 @@
-/* Global body styles */
-body {
-    font-family: 'Star Wars', 'Segoe UI', Tahoma, Geneva, sans-serif;
-    background-color: #0a0a0a;  /* Dark Star Wars style */
-    color: #f1f1f1;  /* Light text for readability */
-    padding: 20px;
+/* Réinitialisation de base */
+* {
     margin: 0;
-}
-
-/* Logo styling */
-.logo img {
-    max-width: 320px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Section styling */
-section {
-    background-color: #222;  /* Fond sombre, comme les autres sections */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
     padding: 20px;
-    border-radius: 8px;  /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre douce */
-    margin-top: 20px;
-}
-
-section h2 {
-    font-size: 2rem;
-    color: #ffe81f;
-}
-
-/* Comics section */
-#comics-timeline {
-    background-color: #222;  /* Fond sombre, comme les autres sections */
-    padding: 20px;
-    border-radius: 8px;  /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre douce */
-    margin-top: 20px;
-}
-
-#comics-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#comics-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Titres */
+  h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    color: #f1c40f;
+    letter-spacing: 2px;
     margin-bottom: 10px;
-}
-
-#comics-list li a {
-    color: #f1f1f1;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-#comics-list li a:hover {
-    color: #ffe81f;
-}
-
-/* Styling for the top bar */
-.top-bar {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 1.2rem;
-    color: #f1f1f1;
-}
-
-.top-bar a {
-    color: #ffe81f;
+  }
+  
+  /* Liens */
+  a {
+    color: #f1c40f;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.top-bar a:hover {
-    color: #f1f1f1;
-    text-decoration: underline;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
+  }
+  
+  a:hover {
+    color: #e67e22;
+  }
+  
+  /* Section générale */
+  section {
+    margin: 30px 0;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Images des sections */
+  section img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Listes */
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  ul li em {
+    color: #ccc;
+  }
+  
+  ul li a em {
+    font-style: italic;
+    color: #f39c12;
+  }
+  
+  /* Chronologie des Comics */
+  #comics-timeline {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+  }
+  
+  #comics-timeline h3 {
+    color: #f39c12;
+    font-size: 18px;
+  }
+  
+  #comics-timeline ul li {
+    margin-left: 20px;
+  }
+  
+  #comics-timeline strong {
+    color: #f1c40f;
+    font-weight: bold;
+  }
+  
+  /* Réseaux sociaux / Footer */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #aaa;
+  }
+  
+  footer a {
+    color: #aaa;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #f39c12;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
     .logo img {
-        max-width: 250px;
+      width: 120px;
     }
-
-    section h2 {
-        font-size: 1.5rem;
+  
+    h1, h2, h3 {
+      font-size: 1.2rem;
     }
-}
+  
+    section {
+      padding: 10px;
+    }
+  
+    section img {
+      width: 25px;
+    }
+  
+    #comics-timeline {
+      padding: 15px;
+    }
+  
+    footer {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    .logo img {
+      width: 100px;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1rem;
+    }
+  
+    #comics-timeline {
+      padding: 10px;
+    }
+  }
+  
