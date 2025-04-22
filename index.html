@@ -12,6 +12,13 @@
   <div class="logo">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg" alt="Star Wars Logo" />
   </div>
+  <!-- Bouton pour afficher/masquer les comics entre IV et V -->
+  <div style="text-align: center; margin: 20px;">
+    <button onclick="document.getElementById('comics-timeline').style.display = 
+        document.getElementById('comics-timeline').style.display === 'none' ? 'block' : 'none';">
+        Show comics
+    </button>
+</div>
       <!-- Chronologie -->
   <section id="dawn-of-the-jedi">
     <h2><img src="images/dawn-of-the-jedi.png" alt="Dawn of the Jedi Logo">Dawn of the Jedi</h2>
@@ -62,82 +69,76 @@
             <li><a href="https://www.starwars.com/series/tales-of-the-empire" target="_blank"><em>Tales of the Empire</em></a> – Season 2 (~0 BBY)</li>
             <li><a href="https://www.starwars.com/films/rogue-one" target="_blank"><em>Rogue One: A Star Wars Story</em></a> (0 BBY)</li>
             <li><a href="https://www.starwars.com/films/star-wars-episode-iv-a-new-hope" target="_blank"><em>Episode IV: A New Hope</em></a> (0 BBY)</li>
-        </ul>
+        </ul>    
+
     
-        <!-- Bouton pour afficher/masquer les comics entre IV et V -->
-        <div style="text-align: center; margin: 20px;">
-            <button onclick="document.getElementById('comics-timeline').style.display = 
-                document.getElementById('comics-timeline').style.display === 'none' ? 'block' : 'none';">
-                Afficher les comics entre IV et V
-            </button>
-        </div>
-    
-        <!-- Section des comics entre IV et V -->
+        <!-- Section for comics between IV and V -->
         <div id="comics-timeline" style="display: none; padding: 0 20px;">
-            <h3>Comics entre les épisodes IV et V</h3>
+            <h3>Comics between Episodes IV and V</h3>
             <ul id="comics-list">
-                <li><strong>0 ABY – Immédiatement après l’Étoile de la Mort :</strong>
+                <li><strong>0 ABY – Immediately after the Death Star:</strong>
                     <ul>
-                        <li><em>Princess Leia (mini-série)</em> – Leia tente de rassembler les survivants d’Alderaan</li>
-                        <li><em>Star Wars Vol. 1: Skywalker Strikes</em> – Sabotage sur Cymoon 1</li>
-                        <li><em>Darth Vader Vol. 1: Vader</em> – Vader apprend pour Luke</li>
-                        <li><em>Darth Vader Vol. 2: Shadows and Secrets</em> – Introduction d’Aphra</li>
-                        <li><em>Star Wars Vol. 2: Showdown on the Smuggler’s Moon</em> – Luke cherche les Jedi</li>
-                        <li><em>Lando (mini-série)</em> – Braquage de vaisseau Sith</li>
+                        <li><em>Princess Leia (miniseries)</em></li>
+                        <li><em>Star Wars Vol. 1: Skywalker Strikes</em></li>
+                        <li><em>Darth Vader Vol. 1: Vader</em></li>
+                        <li><em>Darth Vader Vol. 2: Shadows and Secrets</em></li>
+                        <li><em>Star Wars Vol. 2: Showdown on the Smuggler’s Moon</em></li>
+                        <li><em>Lando (miniseries)</em></li>
                     </ul>
                 </li>
-                <li><strong>~0.5 ABY – Quelques mois après Yavin :</strong>
+                <li><strong>~0.5 ABY – A few months after Yavin:</strong>
                     <ul>
-                        <li><em>Vader Down (crossover)</em> – Confrontation Luke vs. Vader</li>
-                        <li><em>Star Wars Vol. 3: Rebel Jail</em> – Prison secrète</li>
-                        <li><em>Darth Vader Vol. 3: The Shu-Torun War</em> – Guerre sur Shu-Torun</li>
-                        <li><em>Darth Vader Vol. 4: End of Games</em> – Fin de l’arc Vader</li>
+                        <li><em>Vader Down (crossover)</em></li>
+                        <li><em>Star Wars Vol. 3: Rebel Jail</em></li>
+                        <li><em>Darth Vader Vol. 3: The Shu-Torun War</em></li>
+                        <li><em>Darth Vader Vol. 4: End of Games</em></li>
                     </ul>
                 </li>
-                <li><strong>~1 ABY :</strong>
+                <li><strong>~1 ABY:</strong>
                     <ul>
-                        <li><em>Han Solo (mini-série)</em> – Course et espion rebelle</li>
-                        <li><em>Star Wars Vol. 4: Last Flight of the Harbinger</em> – Attaque d’un destroyer</li>
-                        <li><em>Doctor Aphra Vol. 1: Aphra</em> – Après Vader</li>
-                        <li><em>The Screaming Citadel</em> – Luke & Aphra et une source Jedi</li>
+                        <li><em>Han Solo (miniseries)</em></li>
+                        <li><em>Star Wars Vol. 4: Last Flight of the Harbinger</em></li>
+                        <li><em>Doctor Aphra Vol. 1: Aphra</em></li>
+                        <li><em>The Screaming Citadel</em></li>
                     </ul>
                 </li>
-                <li><strong>~1.5 ABY :</strong>
+                <li><strong>~1.5 ABY:</strong>
                     <ul>
-                        <li><em>Star Wars Vol. 5: Yoda’s Secret War</em> – Mission de Yoda</li>
-                        <li><em>Star Wars Vol. 6: Out Among the Stars</em> – Missions diverses</li>
-                        <li><em>Doctor Aphra Vol. 2 à 4</em> – Explorations et trahisons</li>
+                        <li><em>Star Wars Vol. 5: Yoda’s Secret War</em></li>
+                        <li><em>Star Wars Vol. 6: Out Among the Stars</em></li>
+                        <li><em>Doctor Aphra Vol. 2–4</em></li>
                     </ul>
                 </li>
-                <li><strong>2 ABY :</strong>
+                <li><strong>2 ABY:</strong>
                     <ul>
-                        <li><em>Star Wars Vol. 7: The Ashes of Jedha</em> – Rébellion locale</li>
-                        <li><em>Star Wars Vol. 8: Mutiny at Mon Cala</em> – Début de la flotte rebelle</li>
-                        <li><em>Star Wars Vol. 9: Hope Dies</em> – Vader frappe fort</li>
-                        <li><em>Doctor Aphra Vol. 5: Worst Among Equals</em> – Course à la survie</li>
+                        <li><em>Star Wars Vol. 7: The Ashes of Jedha</em></li>
+                        <li><em>Star Wars Vol. 8: Mutiny at Mon Cala</em></li>
+                        <li><em>Star Wars Vol. 9: Hope Dies</em></li>
+                        <li><em>Doctor Aphra Vol. 5: Worst Among Equals</em></li>
                     </ul>
                 </li>
-                <li><strong>2.5 ABY :</strong>
+                <li><strong>2.5 ABY:</strong>
                     <ul>
-                        <li><em>Star Wars Vol. 10: The Escape</em> – Refuge secret</li>
-                        <li><em>Star Wars Vol. 11: The Scourging of Shu-Torun</em> – Contre-attaque rebelle</li>
-                        <li><em>Doctor Aphra Vol. 6–7</em> – Aphra change de camp</li>
+                        <li><em>Star Wars Vol. 10: The Escape</em></li>
+                        <li><em>Star Wars Vol. 11: The Scourging of Shu-Torun</em></li>
+                        <li><em>Doctor Aphra Vol. 6–7</em></li>
                     </ul>
                 </li>
-                <li><strong>3 ABY – Juste avant Hoth :</strong>
+                <li><strong>3 ABY – Just before Hoth:</strong>
                     <ul>
-                        <li><em>Star Wars Vol. 12: Rebels and Rogues</em> – Derniers mouvements avant la base Hoth</li>
+                        <li><em>Star Wars Vol. 12: Rebels and Rogues</em></li>
                     </ul>
                 </li>
             </ul>
         </div>
     
-        <!-- Liste des films sans espace supplémentaire si les comics ne sont pas chargés -->
-        <ul id="episode-list">
+        <!-- List of movies without extra space if comics are not shown -->
+        <ul id="episode-list" style="margin-top: 0;">
             <li><a href="https://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back" target="_blank"><em>Episode V: The Empire Strikes Back</em></a> (3 ABY)</li>
             <li><a href="https://www.starwars.com/films/star-wars-episode-vi-return-of-the-jedi" target="_blank"><em>Episode VI: Return of the Jedi</em></a> (4 ABY)</li>
         </ul>
     </section>
+    
     
     
     
