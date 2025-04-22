@@ -1,0 +1,13 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".timeline-section");
+
+  sections.forEach(section => {
+    const title = section.querySelector("h2");
+
+    title.style.cursor = "pointer";
+
+    title.addEventListener("click", () => {
+      section.classList.toggle("collapsed");
+    });
+  });
+});
