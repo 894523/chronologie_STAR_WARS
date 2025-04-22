@@ -16,11 +16,11 @@ body {
 
 /* Section styling */
 section {
-    margin-bottom: 40px;
+    background-color: #222;  /* Fond sombre, comme les autres sections */
     padding: 20px;
-    background-color: #222;  /* Sombre, comme la section comics */
     border-radius: 8px;  /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre douce */
+    margin-top: 20px;
 }
 
 section h2 {
