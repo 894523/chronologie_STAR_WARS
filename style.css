@@ -1,8 +1,8 @@
 /* Global body styles */
 body {
     font-family: 'Star Wars', 'Segoe UI', Tahoma, Geneva, sans-serif;
-    background-color: #0a0a0a;  /* Dark Star Wars style */
-    color: #f1f1f1;  /* Light text for readability */
+    background-color: #0a0a0a; /* Fond sombre uniforme */
+    color: #f1f1f1;
     padding: 20px;
     margin: 0;
 }
@@ -12,9 +12,8 @@ body {
     max-width: 320px;
     display: block;
     margin: 0 auto;
+    background-color: #0a0a0a; /* Même fond que la page pour effacer le rectangle */
 }
-
-
 
 /* Section headers and images */
 h2 img {
@@ -27,16 +26,15 @@ h2 {
     font-family: 'Star Wars', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #ffe81f;  /* Iconic yellow for Star Wars */
-   
+    color: #ffe81f;
+}
 
 /* Section styling */
 section {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #0a0a0a;  /* Slightly lighter dark background */
+    background-color: #1a1a1a; /* Légère différence pour les sections */
     border-radius: 8px;
-    
 }
 
 section h2 {
@@ -71,7 +69,7 @@ section ul li a:hover {
     font-size: 1.6rem;
     color: #ffe81f;
     margin-bottom: 15px;
-    
+}
 
 #comics-list {
     list-style-type: none;
@@ -92,7 +90,7 @@ section ul li a:hover {
     color: #ffe81f;
 }
 
-/* Styling for the top bar (if used) */
+/* Top bar styling */
 .top-bar {
     text-align: center;
     margin-top: 30px;
@@ -111,7 +109,7 @@ section ul li a:hover {
     text-decoration: underline;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive design */
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -124,15 +122,15 @@ section ul li a:hover {
     section h2 {
         font-size: 1.5rem;
     }
-
-        
 }
+
+/* Episode list cleanup */
 #episode-list {
     margin-top: 0;
     padding: 0;
 }
 
 #episode-list li {
-    margin: 0; /* Enlève l'espace vertical entre les éléments */
-    padding: 0; /* Enlève le padding interne des éléments */
+    margin: 0;
+    padding: 0;
 }
